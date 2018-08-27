@@ -1,0 +1,12 @@
+[user]
+        name = Adam Lichter
+        email = adamlichter@gmail.com
+ 
+[init]
+     templatedir = ~/.git-templates
+ 
+[alias]
+        po = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
+        nuke = !sh -c 'git branch -D $1 && git push origin :$1' -
+[color]
+	ui = auto
